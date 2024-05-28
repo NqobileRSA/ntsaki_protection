@@ -8,7 +8,7 @@ import GAURD from "../src/assets/images/Retail-Security.webp";
 
 // navigation
 export const navLinks = [
-  { path: "/", label: "Home" },
+  { path: "/index", label: "Home" },
   { path: "/About", label: "About" },
   { path: "/Services", label: "Services" },
   { path: "/Contact", label: "Contact" },
