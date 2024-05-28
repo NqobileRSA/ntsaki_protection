@@ -1,0 +1,18 @@
+.breadcrumb {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1px;
+  color: #52565e;
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc6d;
+  /* border-top: 1px solid #cccccc7c; */
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.home-link {
+  color: #52565e;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: capitalize;
+}

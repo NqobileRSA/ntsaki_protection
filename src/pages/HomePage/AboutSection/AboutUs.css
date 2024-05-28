@@ -1,0 +1,92 @@
+.tabs {
+  padding-top: 0;
+}
+.tabList {
+  position: relative;
+  top: 50px;
+  font-size: 50px;
+}
+.mantine-Tabs-tabLabel .tabLabel {
+  font-weight: 700;
+  color: #52565e !important;
+}
+
+.tabs .nav-tabs {
+  border: 0;
+}
+
+.tabs .nav-link {
+  border: 1px solid #b9b9b9;
+  padding: 15px;
+  transition: 0.3s;
+  color: #52565e;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tabs .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.tabs .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tabs .nav-link.active {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .tabs .nav-link i {
+    padding: 0;
+    line-height: 1;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .tabs .nav-link {
+    padding: 15px;
+  }
+
+  .tabs .nav-link i {
+    font-size: 24px;
+  }
+}
+
+.tabs .tab-content {
+  margin-top: 30px;
+}
+
+.tabs .tab-pane h3 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #1a1a1a;
+}
+.tabs .tab-pane h4 {
+  font-size: 20px;
+  color: #393838;
+}
+.tabs .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tabs .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.tabs .tab-pane ul i {
+  font-size: 20px;
+  padding-right: 4px;
+}
+
+.tabs .tab-pane p:last-child {
+  margin-bottom: 0;
+}

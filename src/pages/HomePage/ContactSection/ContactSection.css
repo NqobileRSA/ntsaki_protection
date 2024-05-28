@@ -1,0 +1,202 @@
+/* .contactSection {
+  padding-bottom: 100px;
+} */
+
+/* Maps */
+.maps-section {
+  margin: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  color: #f4f7f7;
+  padding-top: 15px;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card-selector {
+  display: grid;
+  grid-template-areas: "card1 card2" "toggle toggle";
+}
+
+.card {
+  position: relative;
+  width: 40em;
+  height: 20em;
+  padding: 1.25em;
+  color: #586875;
+  background-color: #f4f7f7;
+  box-shadow: 0 5px 5px rgba(71, 70, 70, 0.4);
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  border-radius: 1px !important;
+}
+
+.card1 {
+  grid-area: card1;
+  margin-right: -10px;
+  --swing: -25px;
+  --overlap: 25px;
+}
+
+.card2 {
+  grid-area: card2;
+  margin-left: -10px;
+  --swing: 25px;
+  --overlap: -25px;
+}
+
+#card1:checked ~ .card-selector .card1,
+#card2:checked ~ .card-selector .card2 {
+  animation-name: swing-forwards;
+}
+
+@keyframes swing-forwards {
+  0% {
+    z-index: 1;
+    transform: scale(0.9);
+  }
+  50% {
+    transform: translateX(var(--swing));
+  }
+  100% {
+    z-index: 2;
+    transform: translateX(var(--overlap)) scale(1.1);
+  }
+}
+
+#card1:checked ~ .card-selector .card2,
+#card2:checked ~ .card-selector .card1 {
+  animation-name: swing-backwards;
+}
+
+@keyframes swing-backwards {
+  0% {
+    z-index: 2;
+    transform: translateX(var(--overlap)) scale(1.1);
+  }
+  50% {
+    transform: translateX(var(--swing));
+  }
+  100% {
+    z-index: 1;
+    transform: scale(0.9);
+  }
+}
+
+.toggle-btn {
+  grid-area: toggle;
+  margin: 50px auto 0;
+  border: 1px solid #f4f7f7;
+  border-radius: 9999px;
+  font-size: 1.25rem;
+  user-select: none;
+  color: rgb(34, 34, 34);
+  padding-right: 20px;
+}
+
+.toggle-btn::before,
+.toggle-btn::after {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.toggle-btn::before {
+  margin-right: 10px;
+}
+
+.toggle-btn::after {
+  margin-left: 10px;
+}
+
+#card1:checked ~ .card-selector .toggle-btn1,
+#card2:checked ~ .card-selector .toggle-btn2 {
+  display: none;
+}
+
+.mobile-carousel {
+  display: none;
+}
+
+@media (max-width: 1063px) {
+  .maps-section {
+    display: none;
+  }
+  .mobile-carousel {
+    display: block;
+  }
+}
+
+/* .contact .info {
+  border-top: 3px solid #47b2e4;
+  border-bottom: 3px solid #364d59;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+} */
+
+.contact .info i {
+  font-size: 20px;
+  color: #364d59;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e7f5fb71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #364d59;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #364d59;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #364d59;
+  color: #fff;
+}

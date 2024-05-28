@@ -1,0 +1,41 @@
+.call-to-action {
+  background: linear-gradient(rgba(38, 43, 49, 0.361), rgba(0, 0, 0, 0.667)),
+    url("../../assets/images/commuter-getting-bag-checked-from-airport-security-officer.jpg")
+      center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+@media (min-width: 1365px) {
+  .call-to-action {
+    background-attachment: fixed;
+  }
+}
+
+.call-to-action h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.call-to-action p {
+  color: #fff;
+}
+
+.call-to-action .cta-btn {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.call-to-action .cta-btn:hover {
+  background: #0e1d34;
+  border: 2px solid #0e1d34;
+}

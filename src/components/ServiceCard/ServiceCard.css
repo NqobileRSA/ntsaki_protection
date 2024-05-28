@@ -1,0 +1,103 @@
+.section-header p {
+  margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+  .section-header p {
+    max-width: 80%;
+  }
+}
+
+.services .img {
+  border-radius: 2px;
+  overflow: hidden;
+  height: 280px;
+}
+
+.services .img img {
+  height: 100%;
+  width: 100%;
+  transition: 0.6s;
+}
+
+.services .details {
+  padding: 50px 30px;
+  margin: -185px 30px 0 30px;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  background: rgba(255, 255, 255, 0.934);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.148);
+}
+
+.services .details .icon {
+  margin: 0;
+  width: 72px;
+  height: 72px;
+  background: #242424;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  border: 6px solid white;
+}
+
+.services .details h3 {
+  text-transform: capitalize;
+  color: #52565e;
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+
+.services .details p {
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.services .service-item:hover .details h3 {
+  color: rgba(0, 0, 0, 0.486);
+}
+
+.services .service-item:hover .details .icon {
+  background: #ffffffe2;
+  border: 2px solid #242424;
+}
+
+.services .service-item:hover .details .icon i {
+  color: #242424;
+}
+
+.services .service-item:hover .img img {
+  transform: scale(1.2);
+}
+.services .service-item:hover .btn {
+  background: #ffffffe2;
+  color: #242424;
+}
+
+/* .service-item #learn-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 1px;
+  background-color: #242424;
+  > .link {
+    color: rgb(255, 255, 255);
+  }
+} */
+/* .services .service-item:hover #learn-btn {
+  background-color: #ffff;
+  border: 1px solid #242424;
+  > .link {
+    color: #242424;
+  }
+} */

@@ -1,0 +1,27 @@
+.floating-whatsapp-chatbox {
+  border-radius: 5px !important;
+  height: 400px !important;
+  opacity: 0.97 !important;
+}
+.floating-whatsapp-chatbox header {
+  position: relative !important;
+  background: #f0f0f000;
+  display: flex;
+  > div span {
+    color: black !important;
+  }
+}
+.styles-module_whatsappButton__tVits {
+  background-color: #242424 !important;
+}
+/* .styles-module_whatsappButton__tVits:after {
+  background-color: red !important;
+  color: red !important;
+  box-shadow: red !important;
+}
+@keyframes styles-module_pulse_BjkE8 {
+  0% {
+    background-color: red !important;
+    box-shadow: red !important;
+  }
+} */

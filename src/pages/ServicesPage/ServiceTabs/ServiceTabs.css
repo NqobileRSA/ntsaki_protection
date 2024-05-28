@@ -1,0 +1,54 @@
+.services-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.services-title:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #242424;
+  right: 48.5vw;
+  bottom: 0;
+}
+.tabList {
+  position: relative;
+  top: 50px;
+  font-size: 50px;
+}
+.tabLabel {
+  font-weight: 700;
+  color: #242424 !important;
+}
+/* responsiveness */
+.detail-carousel {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .desktop-details {
+    display: none;
+  }
+  .detail-carousel {
+    display: block;
+  }
+  .section-tabs {
+    /* border: 1px solid red; */
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* mantine override */
+.mantine-Carousel-control {
+  border: 1px solid rgb(189, 184, 184) !important;
+  background-color: white !important;
+}

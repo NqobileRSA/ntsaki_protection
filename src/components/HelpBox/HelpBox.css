@@ -1,0 +1,21 @@
+.help-box {
+  background-color: rgb(241, 238, 238);
+  color: rgb(58, 58, 58);
+  margin-top: 30px;
+  padding: 30px 15px;
+  transition: all ease-in-out 0.5s;
+}
+
+.help-box .help-icon {
+  font-size: 48px;
+}
+
+.link {
+  color: #242424;
+}
+
+.help-box:hover {
+  color: #ffff;
+  background-color: #52565e;
+  transition: all ease-in-out 0.5s;
+}
