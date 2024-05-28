@@ -5,13 +5,13 @@ import renewal from "../src/assets/images/crop-businessman-signing-papers.jpg";
 import CIT from "../src/assets/images/Cash-In-Transit.jpg";
 import VIP from "../src/assets/images/VIP-Protection.jpg";
 import GAURD from "../src/assets/images/Retail-Security.webp";
-
-// navigation
+import { HomePage, AboutPage, ServicesPage, ContactPage } from "./pages/pages";
+// navigations
 export const navLinks = [
-  { path: "/index", label: "Home" },
-  { path: "/About", label: "About" },
-  { path: "/Services", label: "Services" },
-  { path: "/Contact", label: "Contact" },
+  { path: "/ntsaki_protection/", label: "Home", element: HomePage },
+  { path: "/About", label: "About", element: AboutPage },
+  { path: "/Services", label: "Services", element: ServicesPage },
+  { path: "/Contact", label: "Contact", element: ContactPage },
 ];
 // FAQS
 export const faqs = [
